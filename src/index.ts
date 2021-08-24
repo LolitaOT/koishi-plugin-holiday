@@ -91,7 +91,11 @@ function apply (ctx: Context, config: Config) {
     }
     // return 
   }).shortcut('明天上班吗')
-
+  ctx.command('holiday').subcommand('.clean', '清除缓存')
+  .action(async () => {
+    await responseCache.clean()
+    return '缓存已清除'
+  })
 }
 
 export { apply }

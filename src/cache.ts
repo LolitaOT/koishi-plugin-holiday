@@ -20,7 +20,11 @@ export class ResponseCache {
   async clean(): Promise<void> {
     if(this.useAudio) {
       for (const key in this.cache) {
-        await fs.promises.unlink(this.cache[key].file)
+        try {
+          await fs.promises.unlink(this.cache[key].file.replace('file:///', ''))
+        }catch(e) {
+          //
+        }
       }
     }
     this.cache = {}
