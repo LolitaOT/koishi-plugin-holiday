@@ -1,0 +1,81 @@
+{
+  "xml": "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='$lang$'><voice name='$voiceName$'><mstts:express-as style='$style$' styledegree='$styledegree$'>$text$</mstts:express-as></voice></speak>",
+  "demoXml": "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='zh-CN'><voice name='zh-CN-XiaoxiaoNeural'><mstts:express-as style='sad' styledegree='2'>快走吧，路上一定要注意安全，早去早回。</mstts:express-as></voice></speak>",
+  "lang": {
+    "ja-JP": [
+      { 
+        "voiceName": "ja-JP-NanamiNeural",
+        "labek": "Nanami"
+      }
+    ],
+    "zh-CN": [
+      {
+        "voiceName": "zh-CN-XiaoxiaoNeural",
+        "label": "晓晓",
+        "defaultConfig": {
+          "style": "fearful",
+          "styledegree": 1
+        },
+        "style": [
+          {
+            "label": "正式专业的语气",
+            "value": "newscast"
+          },
+          {
+            "label": "友好热情",
+            "value": "customerservice"
+          },
+          {
+            "label": "热情而轻松",
+            "value": "assistant"
+          },
+          {
+            "label": "轻松、随意",
+            "value": "chat"
+          },
+          {
+            "label": "沉着冷静",
+            "value": "calm"
+          },
+          {
+            "label": "欢快、热情",
+            "value": "cheerful"
+          },
+          {
+            "label": "悲伤（说话时呜咽或哭泣）",
+            "value": "sad"
+          },
+          {
+            "label": "恼怒",
+            "value": "angry"
+          },
+          {
+            "label": "恐惧、紧张",
+            "value": "fearful"
+          },
+          {
+            "label": "轻蔑和抱怨",
+            "value": "disgruntled"
+          },
+          {
+            "label": "严肃和命令",
+            "value": "serious"
+          },
+          {
+            "label": "温暖而亲切",
+            "value": "affectionate"
+          },
+          {
+            "label": "温和、礼貌和愉快",
+            "value": "gentle"
+          },
+          {
+            "label": "优美又带感伤",
+            "value": "lyrical"
+          }
+        ],
+        "styledegree": 1
+      }
+    ]
+  }
+}
