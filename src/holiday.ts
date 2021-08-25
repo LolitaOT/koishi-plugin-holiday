@@ -10,7 +10,7 @@ export class Holiday {
   }
   // 最近放假安排
   async nextHoliday(): Promise<string> {
-    const result:ResponseType = await $.get(`/tts`)
+    const result:ResponseType = await $.get(`/tts?t=` + new Date().getTime())
     if(result.code === 0) {
       return result.tts
     } else {
@@ -19,7 +19,7 @@ export class Holiday {
   }
   // 什么时候假期
   async holiday(): Promise<string> {
-    const result:ResponseType = await $.get(`/tts/next`)
+    const result:ResponseType = await $.get(`/tts/next?t=` + new Date().getTime())
     if(result.code === 0) {
       return result.tts
     } else {
@@ -28,7 +28,7 @@ export class Holiday {
   }
   // 明天放假吗
   async tomorrow(): Promise<string> {
-    const result:ResponseType = await $.get(`/tts/tomorrow`)
+    const result:ResponseType = await $.get(`/tts/tomorrow?t=` + new Date().getTime())
     if(result.code === 0) {
       return result.tts
     } else {

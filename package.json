@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-holiday",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "什么时候放假",
   "main": "./lib/index.js",
   "scripts": {
